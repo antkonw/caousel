@@ -1,0 +1,95 @@
+body{
+  background-color:#232323;
+}
+.header-carousel {
+		  margin-top: 20px;
+		  width: 1024px;
+      height:500px;
+		  margin:200px auto;
+		  border: 1px solid #cecece;
+		  position: relative;
+		  overflow: hidden; 
+		}
+.header-carousel .header-carousel-img {
+      width: 500%;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      left: 0; 
+  }
+
+  .header-carousel .header-carousel-img li {
+      float: left;
+      width: 20%;
+      position: relative; 
+  }
+
+  .header-carousel .header-carousel-img li img {
+      float: left;
+      width: 100%;
+    }
+  .header-carousel .header-carousel-bottom {
+      position: absolute;
+      bottom: 20px;
+      right: 30px;
+   }
+  .header-carousel .header-carousel-bottom .bottom-flag {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      float: left;
+      margin-right: 5px;
+      z-index: 99; 
+  }
+  .header-carousel .header-carousel-bottom .bottom-flag:hover {
+      cursor: pointer; 
+  }
+  .header-carousel:hover .direction {
+      display: block;
+  }
+  .off {
+      background-color: #fff;
+      border: 1px solid;
+ }
+
+  .on {
+      background-color: #47A6D2;
+      border: 1px solid #47A6D2; 
+}
+
+  .direction {
+      position: absolute;
+      top: 50%;
+      margin-top: -30px;
+      width: 40px;
+      height: 60px;
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      font-family: "宋体";
+      font-size: 50px;
+      line-height: 60px;
+      text-align: center;
+      cursor: pointer;
+      display: none;
+}
+
+  .direction-left {
+    left: 0; 
+}
+
+  .direction-right {
+    right: 0;
+ }
+
+
+@media only screen and (max-width: 468px) {
+  .header-carousel {
+    margin:0 auto;
+    width:350px;
+    height: 250px; 
+  }
+  .header-carousel .header-carousel-img li img {
+      height: 250px; 
+    } 
+}
